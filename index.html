@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasir</title>
+    <!------ CUSTOM CSS  ------>
+    <link rel="stylesheet" href="style.css">
+
+    <!------ GOOGLE FONTS  ------>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&family=Montserrat:ital,wght@0,500;0,600;1,700&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <!------ BOOTSTRAPS CSS  ------>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+    <header class="home">
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#home"><h4 class="text-port">Port<span class="text-folio color">folio</h4></span></a>
+              <button class="navbar-toggler bg-light px-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa-solid fa-bars-staggered"></i></span>
+              </button>
+              <div class="collapse navbar-collapse navigation" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#home" >Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#aboutme">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#myservices">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#team">Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section class="profile" id="home">
+            <div class="intro">
+                <h4 class="text-hello">Hello, I'm</h4>
+                <h1>Muhammad Nasir</h1>
+                <h3>And I'm a <span class="text-auto"></span></h3>
+                <button class="hiring"><a href="#">Hire Me</a></button>
+            </div>
+            <div class="profile-pic">
+                <img src="./assets/images/profile3.jpg" alt="profile">
+            </div>
+          </section>
+
+
+
+          <h1 class="whoiam">About me</h1>
+
+        <section class="aboutme" id="aboutme">
+          <div class="about-img">
+            <img src="./assets/images/profile7.jpg" alt="about" width="200px">
+          </div>
+          <div class="text-about">
+            <h2>I'm Nasir and I'm a <span class="text-auto2"></span></h2>
+            <p>A Front-end Developer. I've working experience in HTML5, CSS3, Bootstrap. Always up for opportunities where I can show my abilities to solve problems and Bring ease in people's lives. Will make your imaginations come true .</p>
+            <button class="cv"><a href="./cv.html" target="_blank">View CV</a></button>
+          </div>
+        </section>
+
+
+
+
+
+
+
+        <h1 class="text-services">Services</h1>
+        <section class="services" id="myservices">
+          <div class="firstser">
+            <i class="fa-solid fa-palette ser-logo"></i>
+            <h2>Web Design</h2>
+            <p> A web designer is responsible for creating the design and layout of a website or web pages. It and can mean working on a brand new website or updating an already existing site</p>
+          </div>
+          <div class="secondser">
+            <i class="fa-solid fa-code ser-logo"></i>
+            <h2>Web Developer</h2>
+            <p>They are typically responsible for the appearance, of the site and technical aspects, such as site speed and how much traffic the site can handle</p>
+          </div>
+          <div class="thirdser">
+            <i class="fa-brands fa-app-store-ios ser-logo"></i>
+            <h2>App Developer</h2>
+            <p>App developer uses programming languages and development skills to create, test, and develop applications on different devices</p>
+          </div>
+        </section>
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- <h1 class="skill-heading">My Skills</h1>
+        <section class="skills" id="skills">
+            <div class="creative"></div>
+            <div class="skill-progress"></div>
+        </section> -->
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/8af973fc09.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <script>
+        var typed = new Typed(".text-auto",{
+            strings:["Web Developer","React Developer","Freelancer"],
+            typeSpeed:120,
+            backSpeed:30,
+            loop:true
+        })
+        var typed = new Typed(".text-auto2",{
+            strings:["Developer"],
+            typeSpeed:120,
+            backSpeed:30,
+            loop:true
+        })
+    </script>
+</body>
+</html>

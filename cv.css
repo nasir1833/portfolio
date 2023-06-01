@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+}
+body{
+    margin: 7% 15%;
+}
+
+.left{
+    border-right: 1px dotted #f9001d;
+}
+.container>.msg{
+    text-align: center;
+    margin:3rem auto auto ;
+}
+.container>.msg>.note{
+    color: #f9001d;
+}
+.container>.msg>.responsive-msg{
+    color: #979797;
+}
+
+
+
+/*---------- LEFT SIDE  ----------*/
+
+section.cv{
+    /* box-shadow: rgba(255, 255, 255, 1) 0px 4px 16px, rgba(255, 255, 255, 1) 0px 8px 32px; */
+    border: 1px dotted #f9004d;
+    border-radius: 12px;
+    color: white;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    grid-template-areas: 
+    'left right';
+}
+.cv>.left{
+    border-radius: 12px 0 0 12px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 3rem;
+    grid-area: left;
+}
+
+.left>.last-name{
+    color: #f9004d;
+}
+.left>img{
+    margin: 1rem 0;
+    width: 40%;
+    border-radius: 50%;
+}
+.left>.adrs-heading,.ph-heading,.email-heading,.wtsp-heading,.github{
+    margin-top: 1rem;
+    color: rgb(226, 225, 225);
+}
+.left>.lng,.hby{
+    margin-top: 1rem;
+}
+.left>.en,.ur{
+    margin: 0.5rem 1rem 0 1rem ;
+}
+.left>ul{
+    margin-top: 1rem;
+}
+.left>ul>li{
+    list-style: circle;
+    list-style-position: inside;
+    padding:0 1rem;
+}
+.left>ul>li,.left>p,.en,.ur{
+    color: rgb(190, 190, 190);
+}
+hr{
+    border: 1px solid #f9001d;
+}
+
+/*---------- RIGHT SIDE  ----------*/
+.cv>.right{
+    border-radius: 0 12px 12px 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 3rem;
+    grid-area: right;
+}
+.right>.description{
+    padding: 1rem 0;
+    text-indent: 3rem;
+}
+.right>ul{
+    margin-top: 1rem;
+}
+.right>ul>li{
+    list-style: circle;
+    list-style-position: inside;
+    padding:0 1rem;
+}
+.right>.ed-details>.dg-{
+    font-weight: bolder;
+}
+.right>.ed-details>.uni-name,.right>span.exp{
+    font-weight: bold;
+}
+.right>p>span.exp,.softw{
+    font-weight: bold;
+}
+.right>.ed-details{
+    margin: 1rem 0 1rem 1rem;
+}
+.right>.exp-details{
+    margin: 1rem 1rem 0;
+}
+.right>.exp-details-city{
+    margin: 0 1rem 1rem;
+}
+.right>.exp-work>li{
+    list-style-position: outside;
+}
+.right>.exp-work{
+    margin: 1rem 0 1rem 2rem;
+}
+.right>.certificate{
+    margin: 1rem 0 -1rem 1rem;
+}
+.right>.certificate>.cer-pla{
+    font-weight: bold;
+}
+.right>.description,ul>li,.exp-details,.exp-details-city,.exp-work>li,.certificate>span.cer-pla,.ed-details>.dg-,.uni-name,.pakistan{
+    color: rgb(190, 190, 190);
+}
+.right>.ed-details>.bs,.exp-details>.exp,.exp-year,.exp-details-city>.softw,.fsd,.certificate>.html,.css,.js{
+    color: rgb(226, 225, 225);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar{
+    width: 0.5rem;
+}
+::-webkit-scrollbar-track{
+    background-color: white;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(150, 149, 149);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(207, 207, 207);
+    border-radius: 10px;
+}

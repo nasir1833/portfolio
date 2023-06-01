@@ -1,0 +1,549 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*---------- HEADER NAVBAR  ----------*/
+
+body>.home{
+    position: sticky;
+    top: 0%;
+}
+.home>.navbar{
+    border-radius: 0 0 7px 7px;
+}
+h4.text-port,a.nav-link{
+    color: white;
+    margin: 0;
+    
+}
+.nav-link{
+    font-family: 'Baloo 2-400', cursive;
+}
+
+
+h4.text-port{
+    font-family: 'Baloo 2-500', cursive;
+    padding-left: 2rem;
+}
+h4.text-port:hover,.text-folio{
+    color: #f9004d;
+}
+.navigation{
+    padding-left: 12rem;
+}
+.navigation ul li{
+    padding: 0.2rem 1.3rem;
+}
+.navigation ul li a{
+    color: #fff;
+    transition: transform 1s;
+}
+.navigation ul li a:hover{
+    color: #f9004d;
+    
+}
+.navigation ul li a:focus{
+    color: #f9004d;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+
+
+
+
+/*---------- MAIN SECTION  ----------*/
+
+
+
+
+
+
+
+.profile{
+    margin-top: -5px;
+    display: grid;
+    background-color: black;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "intro profile-pic";
+}
+.profile .intro{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    grid-area: intro;
+}
+.profile .profile-pic{
+    /* border: 1px solid red; */
+    width: 100%;
+    grid-area: profile-pic;
+}
+.profile .intro h1,.profile .intro h3,.profile .intro h4{
+    margin: 0;
+    text-align: left;
+    padding-left: 2.75rem;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+span.text-auto,span.text-auto2{
+    color: #f9004d;
+    font-family: 'Baloo 2-500', cursive;
+}
+.hiring{
+    background-color: black;
+    width: max-content;
+    padding: 5px 10px;
+    margin: 15px 0 0 2.75rem;
+    border: 1px solid white;
+    border-radius: 7px;
+    
+}
+.hiring:hover{
+    background-color: #f9004d;
+}
+.hiring>a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    padding: 5px 5px;
+    
+}
+.hiring>a:hover{
+    color: white;  
+}
+.profile .profile-pic{
+    display: flex;
+    text-align: center;
+    justify-content: right;
+    padding-right: 3rem;
+    
+}
+.profile .profile-pic>img{
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 20px 10px black;
+    margin: 3rem ;
+}
+
+
+
+
+/*---------- ABOUT SECTION  ----------*/
+
+.whoiam,.skill-heading{
+    text-align: center;
+    margin: 5rem;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+}
+.aboutme{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'about-img text-about';
+}
+
+.about-img{
+    grid-area: about-img;
+    text-align: center;
+    /* border: 2px solid red; */
+}
+.about-img>img{
+    width: 300px;
+    margin: 1rem;
+    border-radius: 12px;
+}
+.text-about{
+    grid-area: text-about;
+    /* text-align: center; */
+    /* border: 3px solid red; */
+    
+}
+.text-about>h2{
+    margin: 3rem auto 1rem 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.text-about>p{
+    margin: 0 1rem;
+    text-indent: 50px;
+    font-family: 'Baloo 2', cursive;
+}
+.text-about>button{
+    background-color: #fff;
+    width: max-content;
+    height: 2.5rem;
+    margin: 1.07rem 1rem;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+.text-about>button:hover{
+    background-color: black;
+    border: 1px solid white;
+    color: #fff;
+}
+.text-about>button>a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    padding: 10px 15px;outline: black;
+    
+}
+.text-about>button>a:hover{
+    color: white;  
+}
+
+
+
+/*---------- SERVICES SECTION  ----------*/
+
+
+
+
+.text-services{
+    text-align: center;
+    margin: 5rem;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#myservices{
+    background-color: black;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'fir sec thir';
+}
+.firstser{
+    grid-area: fir;
+}
+.secondser{
+    grid-area: sec;
+}
+.thirdser{
+    grid-area: thir;
+}
+
+
+
+
+
+
+
+
+
+
+
+.firstser,.secondser,.thirdser{
+    color: #fff;
+    text-align: center;
+    margin: 8rem 3rem;
+    /* border: 1px solid red; */
+    border-radius: 12px;
+    transition: all 0.3s ease-in;
+}
+.firstser>p,.secondser>p,.thirdser>p{
+    margin: 1rem;
+}
+.firstser:hover,.secondser:hover,.thirdser:hover{
+    background-color: #f9004d;
+    color: #fff;  
+}
+.firstser>i,.secondser>i,.thirdser>i{
+    transition: all 0.1s ease-in; 
+}
+.firstser:hover>i,.secondser:hover>i,.thirdser:hover>i{
+    /* background-color: #f9004d; */
+    color: #fff;  
+}
+
+
+
+
+
+
+
+
+
+
+.firstser>.ser-logo,.secondser>.ser-logo,.thirdser>.ser-logo{
+    padding: 3rem 0 2rem;
+    font-size: xx-large;
+    color: #f9004d;
+}
+.firstser>.ser-logo:hover,.secondser>.ser-logo:hover,.thirdser>.ser-logo:hover{
+    color: #fff;
+}
+.firstser>h2,.secondser>h2,.thirdser>h2{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar{
+    width: 0.5rem;
+}
+::-webkit-scrollbar-track{
+    background-color: white;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(150, 149, 149);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(207, 207, 207);
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    #myservices{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'fir sec' 
+        'thir thir';
+        
+    }
+    .services>.thirdser{
+        width: 50%;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+
+    /*---------- SERVICES SECTION  ----------*/
+    #myservices{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'fir sec' 
+        'thir thir';
+        
+    }
+    .services>.thirdser{
+        width: 50%;
+        margin: auto;
+    }
+    .firstser,.secondser,.thirdser{
+        margin: 3rem 3rem;
+    }
+    .firstser>.ser-logo,.secondser>.ser-logo,.thirdser>.ser-logo{
+        padding: 3rem 0 2rem;
+    }
+    .firstser>h2,.secondser>h2,.thirdser>h2{
+        margin-bottom: 1rem;
+    }
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+    /*---------- MAIN SECTION  ----------*/
+
+
+    .profile .profile-pic{
+        padding-right: 0rem;
+        
+    }
+    .profile .profile-pic>img{
+        width: 220px;
+        text-align: right;
+    }
+
+
+
+    /*---------- ABOUT SECTION  ----------*/
+
+
+
+
+
+
+
+    /*---------- SERVICES SECTION  ----------*/
+
+    
+  }
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    /*---------- MAIN SECTION  ----------*/
+
+
+    .profile{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "intro"
+        "profile-pic";
+    }
+    .profile .intro{
+        width: 100%;
+        padding: 50px 0;
+    }
+    .profile .profile-pic{
+        width: 100%;
+        /* display: flex; */
+        text-align: center;
+        justify-content: left;
+        padding: 2rem 0
+        
+    }
+    .profile .profile-pic>img{
+        width: 200px;
+        margin: auto ;
+    }
+    a>.nav-link{
+        padding-left: 0;
+        margin: 0.5rem;
+    }
+
+
+
+    /*---------- ABOUT SECTION  ----------*/
+
+
+    .aboutme{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'about-img'
+        'text-about';
+    }
+
+    .text-about>h2{
+        margin: 3rem auto 1rem 3rem;
+    }
+    .text-about>p{
+        display: flex;
+        justify-content: left;
+        margin-left: 3rem;
+        text-indent: 50px;
+    }
+    .about-img>img{
+        width: 250px;
+        margin: 1rem;
+        border-radius: 12px;
+    }
+    .text-about>button.cv{
+        margin: 2rem 3rem;
+    }
+
+
+
+
+
+
+
+    /*---------- SERVICES SECTION  ----------*/
+    #myservices{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'fir'
+        'sec'
+        'thir';
+    }
+    .firstser,.secondser,.thirdser{
+        margin: 3rem 3rem;
+    }
+    .firstser>.ser-logo,.secondser>.ser-logo,.thirdser>.ser-logo{
+        padding: 3rem 0 2rem;
+    }
+    .firstser>h2,.secondser>h2,.thirdser>h2{
+        margin-bottom: 1rem;
+    }
+  }
